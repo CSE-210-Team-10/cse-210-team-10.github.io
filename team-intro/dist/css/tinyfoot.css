@@ -1,0 +1,128 @@
+tiny-foot {
+	box-sizing: border-box;
+	position: relative;
+}
+
+tiny-foot input[type="checkbox"] {
+	display: none;
+}
+
+tiny-foot span {
+	position: relative;
+	z-index: 5;
+	top: -0.1em;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: inline-block;
+	padding: 0.35em;
+	margin: 0 0.1em 0 0.2em;
+	border: none;
+	border-radius: 0.3em;
+	cursor: pointer;
+	background-color: rgba(110, 110, 110, 0.2);
+	-webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	font-size: 1rem;
+	line-height: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition-property: background-color;
+	transition-property: background-color;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+
+tiny-foot span:hover,
+tiny-foot span:focus {
+	outline: none;
+	background-color: rgba(110, 110, 110, 0.5);
+}
+
+tiny-foot span:active {
+	background-color: rgba(110, 110, 110, 0.5);
+}
+
+tiny-foot span.is-active {
+	background-color: #6e6e6e;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+tiny-foot span:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+tiny-foot span svg {
+	display: inline-block;
+	width: 0.25em;
+	height: 0.25em;
+	margin-right: 0.25em;
+	float: left;
+}
+
+tiny-foot span svg:last-child {
+	margin-right: 0;
+}
+
+tiny-foot .footnote:has(+ label > .tinyfoot-checkbox:checked) {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+tiny-foot .footnote {
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+	min-height: 1rem;
+	min-width: 300px;
+	width: 400%;
+	max-width: 600px;
+	word-wrap: break-word;
+
+	margin: 0;
+	margin-top: 0.5rem;
+	padding: 0.75rem;
+	padding-right: 2.5rem;
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+
+	background-color: #f0f0f0;
+	z-index: 1000;
+
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(10px);
+	transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+
+	font-size: 1vw;
+}
+
+tiny-foot .footnote.right-aligned {
+	left: auto;
+	right: 0;
+}
+
+tiny-foot .close-btn {
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+	border: 2px red solid;
+	font-size: 1.25rem;
+	color: white;
+	border-radius: 0.5rem;
+	background-color: red;
+	cursor: pointer;
+	transition: color 0.2s, background-color 0.2s;
+}
+
+tiny-foot .close-btn:hover {
+	color: red;
+	background-color: pink;
+}

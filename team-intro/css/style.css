@@ -1,0 +1,106 @@
+body {
+    margin-bottom: 30px;
+}
+
+main {
+    margin: auto;
+    width: 85%;
+}
+
+img {
+    margin: 20px;
+    width: 15vw;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    color:cornsilk;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:1.5vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3vw;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.05vw;
+    margin-top: 0;
+    margin-right: 25px;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:cornsilk;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+foot-note {
+    cursor: pointer;
+    color: black; /* Link-like color */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Hidden footnotes content */
+.footnote-content {
+    position: relative;
+    display: none;
+    margin-top: -5px;
+    background-color: #A4BF5B;
+    border: 1px solid #AFE1AF;
+    border-radius: 5px;
+    padding: 1.5rem 0.5rem 2px 0.5rem;
+    font-size: 0.9em;
+    max-width: 300px; 
+}
+
+.close-btn {
+  position: relative;
+  right: 0rem;
+  top: 0rem;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  border-radius: 0.25rem;
+  background-color: red;
+  cursor: pointer;
+}
